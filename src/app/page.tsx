@@ -1,3 +1,4 @@
+import Hero from "@/components/Hero";
 import Header from "../components/Header";
 
 export default function Home() {
@@ -5,7 +6,7 @@ export default function Home() {
     <>
       <Header />
       <main>
-        <section className="min-h-screen bg-[#f9f9f9]"></section>
+        <Hero />
       </main>
     </>
   );

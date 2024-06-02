@@ -20,9 +20,6 @@ export default function MobileNav() {
           Projects
         </Link>
         <Link href="/" onClick={() => setIsOpen(!isOpen)}>
-          Skills
-        </Link>
-        <Link href="/" onClick={() => setIsOpen(!isOpen)}>
           About
         </Link>
         <Link href="/" onClick={() => setIsOpen(!isOpen)}>

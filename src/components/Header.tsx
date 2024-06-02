@@ -18,9 +18,6 @@ export default function Header() {
               Projects
             </Link>
             <Link className="duration-300 hover:opacity-70" href="/">
-              Skills
-            </Link>
-            <Link className="duration-300 hover:opacity-70" href="/">
               About
             </Link>
             <Link className="duration-300 hover:opacity-70" href="/">
