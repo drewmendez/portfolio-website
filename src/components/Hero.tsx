@@ -1,3 +1,5 @@
+import Image from "next/image";
+import profile from "../../public/me.png";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const icons = [
@@ -16,9 +18,10 @@ export default function Hero() {
     <section className="min-h-screen bg-[#f9f9f9] pt-[80px] md:grid md:place-items-center">
       <div className="max-w-[1200px] mx-auto px-6 md:px-16 py-16">
         <div className="flex flex-col justify-center items-center gap-6 md:flex-row md:justify-between">
-          <img
+          <Image
             className="rounded-full border-4 border-[#2d2e32] max-w-[300px] md:order-2 lg:max-w-[400px]"
-            src="/me.png"
+            src={profile}
+            quality={100}
             alt="Me"
           />
           <div className="text-center text-[#2d2e32] md:text-start">
@@ -51,7 +54,7 @@ export default function Hero() {
           </p>
           <div className="grid gap-3 grid-cols-4 md:grid-flow-col">
             {icons.map((icon) => (
-              <IconCard icon={icon} />
+              <IconCard key={icon} icon={icon} />
             ))}
           </div>
         </div>

@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html className="scroll-pt-[80px]" lang="en">
       <body className="font-main">
         <ToggleContextProvider>{children}</ToggleContextProvider>
       </body>

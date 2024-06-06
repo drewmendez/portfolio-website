@@ -14,7 +14,7 @@ export default function Header() {
             <Link className="duration-300 hover:opacity-70" href="/">
               Home
             </Link>
-            <Link className="duration-300 hover:opacity-70" href="/">
+            <Link className="duration-300 hover:opacity-70" href="#projects">
               Projects
             </Link>
             <Link className="duration-300 hover:opacity-70" href="/">
