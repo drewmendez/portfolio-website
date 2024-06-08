@@ -41,7 +41,7 @@ const projects = [
     title: "Fake Store",
     description:
       "An E-commerce website focused on clean design and good user experience while shopping.",
-    techs: ["ReactJS", "SASS"],
+    techs: ["ReactJS", "Sass"],
     githubLink: "https://github.com/drewmendez/fake-store-ecommerce-webapp",
     liveLink: "https://fake-store-ecommerce-webapp.vercel.app",
   },
@@ -95,7 +95,7 @@ function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="p-4 shadow-inner bg-[#f9f9f9] rounded-xl">
       <Image
-        className="border rounded-lg border-slate-500 w-full"
+        className="border rounded-lg border-slate-300 w-full"
         src={project.image}
         alt="Project image"
         quality={100}
