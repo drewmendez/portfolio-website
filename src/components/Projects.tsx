@@ -39,8 +39,7 @@ const projects = [
   {
     image: Project3,
     title: "Fake Store",
-    description:
-      "An E-commerce website focused on clean design and good user experience while shopping.",
+    description: "An E-commerce website focused on clean design and good UX",
     techs: ["ReactJS", "Sass"],
     githubLink: "https://github.com/drewmendez/fake-store-ecommerce-webapp",
     liveLink: "https://fake-store-ecommerce-webapp.vercel.app",
@@ -73,7 +72,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section className="py-10" id="projects">
+    <section className="py-16" id="projects">
       <div className="max-w-[1200px] mx-auto px-6 md:px-16">
         <div className="flex justify-center">
           <h2 className="font-bold text-[#2d2e32] text-2xl mb-10 inline-block border-b-2 pb-2 border-slate-400">
