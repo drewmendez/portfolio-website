@@ -27,7 +27,7 @@ export default function Hero() {
           <div className="text-center text-[#2d2e32] md:text-start">
             <p className="text-lg text-slate-600">Hello there,</p>
             <h1 className="font-extrabold text-3xl lg:text-5xl md:text-4xl md:mt-2">
-              I'm Andrew Jefferson Mendez
+              I&apos;m Andrew Jefferson Mendez
             </h1>
             <p className="text-lg text-slate-600">Front-end Developer.</p>
             <div className="flex gap-4 text-3xl justify-center mt-2 md:justify-start md:mt-5">
