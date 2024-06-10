@@ -21,7 +21,7 @@ export default function About() {
             <h3 className="text-3xl font-bold mb-4">Hello,</h3>
             <p className="text-slate-600">
               I&apos;m Andrew Jefferson Mendez, a recent graduate from
-              Catanduanes State University, holding a Bachelor's degree in
+              Catanduanes State University, holding a Bachelor&apos;s degree in
               Computer Engineering. I am passionate about front-end development,
               focusing on crafting responsive and interactive web applications.
               I also have a strong interest in learning new technologies to
