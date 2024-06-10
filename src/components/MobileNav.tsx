@@ -10,7 +10,7 @@ export default function MobileNav() {
     <aside
       className={`fixed top-[80px] ${
         isOpen ? "left-0" : "-left-full"
-      } z-10 h-full w-full bg-[#fff] px-6 py-6 transition-all duration-300`}
+      } z-10 h-full w-full bg-[#fafafa] px-6 py-6 transition-all duration-300`}
     >
       <nav className="grid justify-items-center font-semibold text-[#2d2e32] text-2xl gap-8 mt-10">
         <Link href="/" onClick={() => setIsOpen(!isOpen)}>
@@ -22,7 +22,7 @@ export default function MobileNav() {
         <Link href="#about" onClick={() => setIsOpen(!isOpen)}>
           About
         </Link>
-        <Link href="/" onClick={() => setIsOpen(!isOpen)}>
+        <Link href="#contact" onClick={() => setIsOpen(!isOpen)}>
           Contact
         </Link>
       </nav>

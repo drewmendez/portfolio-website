@@ -3,7 +3,7 @@ import { SiGmail } from "react-icons/si";
 
 export default function Contact() {
   return (
-    <section className="py-10" id="contact">
+    <section className="pt-10 pb-20 bg-[#fafafa]" id="contact">
       <div className="max-w-[1200px] mx-auto px-6 md:px-16">
         <div className="flex justify-center">
           <h2 className="font-bold text-[#2d2e32] text-2xl mb-10 inline-block border-b-2 pb-2 border-slate-400">

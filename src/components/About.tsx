@@ -3,7 +3,7 @@ import profile from "../../public/me.png";
 
 export default function About() {
   return (
-    <section className="bg-[#f9f9f9] py-16" id="about">
+    <section className="bg-[#e4e5f1] py-16" id="about">
       <div className="max-w-[1200px] mx-auto px-6 md:px-16">
         <div className="flex justify-center">
           <h2 className="font-bold text-[#2d2e32] text-2xl mb-10 inline-block border-b-2 pb-2 border-slate-400">
@@ -19,7 +19,7 @@ export default function About() {
           />
           <div className="text-[#2d2e32] flex-1">
             <h3 className="text-3xl font-bold mb-4">Hello,</h3>
-            <p>
+            <p className="text-slate-600">
               I'm Andrew Jefferson Mendez, a recent graduate from Catanduanes
               State University, holding a Bachelor's degree in Computer
               Engineering. I am passionate about front-end development, focusing
