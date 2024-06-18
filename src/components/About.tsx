@@ -3,7 +3,7 @@ import profile from "../../public/me.png";
 
 export default function About() {
   return (
-    <section className="bg-[#e4e5f1] py-16" id="about">
+    <section className="bg-[#F0F2F2] py-16" id="about">
       <div className="max-w-[1200px] mx-auto px-6 md:px-16">
         <div className="flex justify-center">
           <h2 className="font-bold text-[#2d2e32] text-2xl mb-10 inline-block border-b-2 pb-2 border-slate-400">

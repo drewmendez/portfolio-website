@@ -92,7 +92,7 @@ export default function Projects() {
 
 function ProjectCard({ project }: { project: Project }) {
   return (
-    <div className="p-4 shadow-inner bg-[#e4e5f1] rounded-xl">
+    <div className="p-4 shadow-inner bg-[#F0F2F2] rounded-xl">
       <Image
         className="border rounded-lg border-slate-300 w-full"
         src={project.image}
