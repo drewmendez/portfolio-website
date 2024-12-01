@@ -33,16 +33,16 @@ const projects = [
     description:
       "An engaging game that tests players' knowledge across various subjects.",
     techs: ["ReactJS", "Typescript", "Tailwind"],
-    githubLink: "https://github.com/drewmendez/quiz-game-webapp",
-    liveLink: "https://quiz-game-webapp.vercel.app",
+    githubLink: "https://github.com/drewmendez/trivia-sprint-game",
+    liveLink: "https://trivia-sprint.vercel.app",
   },
   {
     image: Project3,
     title: "Fake Store",
     description: "An E-commerce website focused on clean design and good UX",
     techs: ["ReactJS", "Sass"],
-    githubLink: "https://github.com/drewmendez/fake-store-ecommerce-webapp",
-    liveLink: "https://fake-store-ecommerce-webapp.vercel.app",
+    githubLink: "https://github.com/drewmendez/fake-store-webapp",
+    liveLink: "https://ecomm-fakestore.vercel.app/",
   },
   {
     image: Project4,
