@@ -11,6 +11,10 @@ const icons = [
   "next",
   "tailwind",
   "sass",
+  "express",
+  "nodejs",
+  "mysql",
+  "postman",
 ];
 
 export default function Hero() {
@@ -29,7 +33,7 @@ export default function Hero() {
             <h1 className="font-extrabold text-3xl lg:text-5xl md:text-4xl md:mt-2">
               I&apos;m Andrew Jefferson Mendez
             </h1>
-            <p className="text-lg text-slate-600">Front-end Developer.</p>
+            <p className="text-lg text-slate-600">Aspiring Web Developer.</p>
             <div className="flex gap-4 text-3xl justify-center mt-2 md:justify-start md:mt-5">
               <a
                 className="duration-300 hover:opacity-70"
@@ -52,7 +56,7 @@ export default function Hero() {
           <p className="mr-0 md:mr-6 border-b-2 border-slate-400 mb-8 pb-2 md:border-b-0 md:pb-0 md:mb-0 md:border-r-2 md:pr-5">
             Skills
           </p>
-          <div className="grid gap-5 grid-cols-4 md:grid-flow-col">
+          <div className="flex gap-5 flex-wrap justify-center">
             {icons.map((icon) => (
               <IconCard key={icon} icon={icon} />
             ))}
