@@ -3,12 +3,13 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import Image, { StaticImageData } from "next/image";
 import Project1 from "../../public/edusphere.gif";
 import Project2 from "../../public/kanban-board.gif";
-import Project3 from "../../public/newsbuzz-website.png";
-import Project4 from "../../public/quiz-game-webapp.png";
-import Project5 from "../../public/fake-store-ecommerce-webapp.png";
-import Project6 from "../../public/notes-todo-webapp.png";
-import Project7 from "../../public/blue-cafe-website.png";
-import Project8 from "../../public/clipboard-landing-page.png";
+import Project3 from "../../public/spacex.png";
+import Project4 from "../../public/newsbuzz-website.png";
+import Project5 from "../../public/quiz-game-webapp.png";
+import Project6 from "../../public/fake-store-ecommerce-webapp.png";
+import Project7 from "../../public/notes-todo-webapp.png";
+import Project8 from "../../public/blue-cafe-website.png";
+import Project9 from "../../public/clipboard-landing-page.png";
 
 type Project = {
   image: StaticImageData;
@@ -41,9 +42,18 @@ const projects = [
     liveLink: "#",
     isLive: false,
   },
-
   {
     image: Project3,
+    title: "SpaceX Launch Tracker",
+    description:
+      "A website that tracks and displays detailed information about SpaceX past launches.",
+    techs: ["Vue/Nuxt", "Vuetify", "Typescript"],
+    githubLink: "https://github.com/drewmendez/spacex-launch-tracker",
+    liveLink: "https://spacexnuxt.vercel.app",
+    isLive: true,
+  },
+  {
+    image: Project4,
     title: "NewsBuzz",
     description:
       "A website where you can browse news articles around the world.",
@@ -53,7 +63,7 @@ const projects = [
     isLive: true,
   },
   {
-    image: Project4,
+    image: Project5,
     title: "Quiz Game",
     description:
       "An engaging game that tests players' knowledge across various subjects.",
@@ -63,7 +73,7 @@ const projects = [
     isLive: true,
   },
   {
-    image: Project5,
+    image: Project6,
     title: "Fake Store",
     description: "An E-commerce website focused on clean design and good UX",
     techs: ["React", "Sass"],
@@ -72,7 +82,7 @@ const projects = [
     isLive: true,
   },
   {
-    image: Project6,
+    image: Project7,
     title: "Notes | Todos",
     description: "A webapp where you can take notes and list your todos.",
     techs: ["Javascript", "CSS", "HTML"],
@@ -81,7 +91,7 @@ const projects = [
     isLive: true,
   },
   {
-    image: Project7,
+    image: Project8,
     title: "Blue Cafe",
     description: "A cafe website",
     techs: ["HTML", "CSS", "Javascript"],
@@ -90,7 +100,7 @@ const projects = [
     isLive: true,
   },
   {
-    image: Project8,
+    image: Project9,
     title: "Clipboard",
     description: "A landing page",
     techs: ["HTML", "CSS"],
@@ -124,7 +134,7 @@ function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="p-4 shadow-inner  bg-[#F0F2F2] rounded-xl">
       <Image
-        className="border rounded-lg border-slate-300 w-full"
+        className="border rounded-lg border-slate-300 w-full aspect-video"
         src={project.image}
         alt="Project image"
         quality={100}
