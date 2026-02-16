@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 export default function Footer() {
@@ -5,9 +6,9 @@ export default function Footer() {
 		<footer className="bg-[#2d2e32] py-10 text-white">
 			<div className="mx-auto max-w-[1200px] px-6 md:px-16">
 				<div className="flex flex-col items-center gap-4 md:flex-row md:justify-between">
-					<a className="text-2xl font-extrabold" href="/">
+					<Link className="text-2xl font-extrabold" href="/">
 						Drew.dev
-					</a>
+					</Link>
 
 					<div className="flex gap-4 text-2xl">
 						<a

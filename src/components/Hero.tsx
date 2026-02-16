@@ -68,5 +68,7 @@ export default function Hero() {
 }
 
 function IconCard({ icon }: { icon: string }) {
-	return <img src={`https://skillicons.dev/icons?i=${icon}`} alt={icon} width={55} />
+	return (
+		<Image src={`https://skillicons.dev/icons?i=${icon}`} alt={icon} width={55} height={55} unoptimized />
+	)
 }

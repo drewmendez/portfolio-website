@@ -7,9 +7,9 @@ export default function Header() {
 		<>
 			<header className="fixed top-0 z-10 w-full bg-[#fafafa] px-6 py-6 shadow-[0_0_10px_rgba(0,0,0,.09)] md:px-16">
 				<nav className="flex items-center justify-between">
-					<a className="text-2xl font-extrabold text-[#2d2e32]" href="/">
+					<Link className="text-2xl font-extrabold text-[#2d2e32]" href="/">
 						Drew.dev
-					</a>
+					</Link>
 					<div className="hidden gap-5 font-semibold text-[#2d2e32] sm:flex">
 						<Link className="duration-300 hover:opacity-70" href="/">
 							Home

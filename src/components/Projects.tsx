@@ -13,6 +13,7 @@ import Project5 from '../../public/quiz-game-webapp.png'
 import Project3 from '../../public/spacex.png'
 
 type Project = {
+	id: number
 	image: StaticImageData
 	title: string
 	description: string
@@ -20,10 +21,12 @@ type Project = {
 	githubLink: string
 	liveLink: string
 	isLive: boolean
+	isGif?: boolean
 }
 
 const projects = [
 	{
+		id: 1,
 		image: Project1,
 		title: 'EduSphere',
 		description: "An LMS application inspired by Google Classroom's UI and functionality.",
@@ -31,8 +34,10 @@ const projects = [
 		githubLink: 'https://github.com/drewmendez/edusphere-lms',
 		liveLink: '#',
 		isLive: false,
+		isGif: true,
 	},
 	{
+		id: 2,
 		image: Project2,
 		title: 'Kanban Board',
 		description: 'An application where you can manage tasks efficiently with drag and drop.',
@@ -40,8 +45,10 @@ const projects = [
 		githubLink: 'https://github.com/drewmendez/kanban-board-webapp',
 		liveLink: '#',
 		isLive: false,
+		isGif: true,
 	},
 	{
+		id: 3,
 		image: Project3,
 		title: 'SpaceX Launch Tracker',
 		description: 'A website that tracks and displays detailed information about SpaceX past launches.',
@@ -51,6 +58,7 @@ const projects = [
 		isLive: true,
 	},
 	{
+		id: 4,
 		image: Project4,
 		title: 'NewsBuzz',
 		description: 'A website where you can browse news articles around the world.',
@@ -60,6 +68,7 @@ const projects = [
 		isLive: true,
 	},
 	{
+		id: 5,
 		image: Project5,
 		title: 'Quiz Game',
 		description: "An engaging game that tests players' knowledge across various subjects.",
@@ -69,6 +78,7 @@ const projects = [
 		isLive: true,
 	},
 	{
+		id: 6,
 		image: Project6,
 		title: 'Fake Store',
 		description: 'An E-commerce website focused on clean design and good UX',
@@ -78,6 +88,7 @@ const projects = [
 		isLive: true,
 	},
 	{
+		id: 7,
 		image: Project7,
 		title: 'Notes | Todos',
 		description: 'A webapp where you can take notes and list your todos.',
@@ -87,6 +98,7 @@ const projects = [
 		isLive: true,
 	},
 	{
+		id: 8,
 		image: Project8,
 		title: 'Blue Cafe',
 		description: 'A cafe website',
@@ -96,6 +108,7 @@ const projects = [
 		isLive: true,
 	},
 	{
+		id: 9,
 		image: Project9,
 		title: 'Clipboard',
 		description: 'A landing page',
@@ -117,8 +130,8 @@ export default function Projects() {
 				</div>
 
 				<div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-					{projects.map((project, index) => (
-						<ProjectCard key={index} project={project} />
+					{projects.map((project) => (
+						<ProjectCard key={project.id} project={project} />
 					))}
 				</div>
 			</div>
@@ -134,6 +147,7 @@ function ProjectCard({ project }: { project: Project }) {
 				src={project.image}
 				alt="Project image"
 				quality={100}
+				unoptimized={project.isGif}
 			/>
 
 			<div className="mt-3">
