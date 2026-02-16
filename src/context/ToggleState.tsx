@@ -1,34 +1,10 @@
-"use client";
+'use client'
 
-import React, { createContext, useContext, useState } from "react";
+import { useState } from 'react'
+import { ToggleContext } from './toggleContext'
 
-interface ContextProps {
-  isOpen: boolean;
-  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+export default function ToggleContextProvider({ children }: { children: React.ReactNode }) {
+	const [isOpen, setIsOpen] = useState(false)
+
+	return <ToggleContext value={{ isOpen, setIsOpen }}>{children}</ToggleContext>
 }
-
-const ToggleContext = createContext<ContextProps | null>(null);
-
-export default function ToggleContextProvider({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  return (
-    <ToggleContext.Provider value={{ isOpen, setIsOpen }}>
-      {children}
-    </ToggleContext.Provider>
-  );
-}
-
-export const useToggleContext = () => {
-  const context = useContext(ToggleContext);
-  if (!context) {
-    throw new Error(
-      "Toggle context should be used within ToggleContextProvider"
-    );
-  }
-  return context;
-};

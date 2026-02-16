@@ -1,17 +1,14 @@
-"use client";
+'use client'
 
-import { useToggleContext } from "@/context/ToggleState";
-import { IoMenu, IoClose } from "react-icons/io5";
+import { IoClose, IoMenu } from 'react-icons/io5'
+import { useToggleContext } from '@/context/useToggleContext'
 
 export default function MenuButton() {
-  const { isOpen, setIsOpen } = useToggleContext();
+	const { isOpen, setIsOpen } = useToggleContext()
 
-  return (
-    <button
-      className="text-3xl text-[#2d2e32] sm:hidden"
-      onClick={() => setIsOpen(!isOpen)}
-    >
-      {isOpen ? <IoClose /> : <IoMenu />}
-    </button>
-  );
+	return (
+		<button className="text-3xl text-[#2d2e32] sm:hidden" onClick={() => setIsOpen(!isOpen)}>
+			{isOpen ? <IoClose /> : <IoMenu />}
+		</button>
+	)
 }
