@@ -1,7 +1,7 @@
 "use client";
 
-import { useToggleContext } from "@/context/ToggleState";
 import Link from "next/link";
+import { useToggleContext } from "@/context/ToggleState";
 
 export default function MobileNav() {
   const { isOpen, setIsOpen } = useToggleContext();

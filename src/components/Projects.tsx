@@ -1,15 +1,16 @@
+import type { StaticImageData } from "next/image";
+import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
-import Image, { StaticImageData } from "next/image";
-import Project1 from "../../public/edusphere.gif";
-import Project2 from "../../public/kanban-board.gif";
-import Project3 from "../../public/spacex.png";
-import Project4 from "../../public/newsbuzz-website.png";
-import Project5 from "../../public/quiz-game-webapp.png";
-import Project6 from "../../public/fake-store-ecommerce-webapp.png";
-import Project7 from "../../public/notes-todo-webapp.png";
 import Project8 from "../../public/blue-cafe-website.png";
 import Project9 from "../../public/clipboard-landing-page.png";
+import Project1 from "../../public/edusphere.gif";
+import Project6 from "../../public/fake-store-ecommerce-webapp.png";
+import Project2 from "../../public/kanban-board.gif";
+import Project4 from "../../public/newsbuzz-website.png";
+import Project7 from "../../public/notes-todo-webapp.png";
+import Project5 from "../../public/quiz-game-webapp.png";
+import Project3 from "../../public/spacex.png";
 
 type Project = {
   image: StaticImageData;

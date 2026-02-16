@@ -1,6 +1,6 @@
 import Image from "next/image";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import profile from "../../public/me.png";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const icons = [
   "html",

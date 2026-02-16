@@ -1,7 +1,7 @@
 "use client";
 
+import { IoClose, IoMenu } from "react-icons/io5";
 import { useToggleContext } from "@/context/ToggleState";
-import { IoMenu, IoClose } from "react-icons/io5";
 
 export default function MenuButton() {
   const { isOpen, setIsOpen } = useToggleContext();

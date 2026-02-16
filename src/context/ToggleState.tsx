@@ -1,6 +1,7 @@
 "use client";
 
-import React, { createContext, useContext, useState } from "react";
+import * as React from "react";
+import { createContext, useState } from "react";
 
 interface ContextProps {
   isOpen: boolean;
@@ -17,14 +18,14 @@ export default function ToggleContextProvider({
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <ToggleContext.Provider value={{ isOpen, setIsOpen }}>
+    <ToggleContext value={{ isOpen, setIsOpen }}>
       {children}
-    </ToggleContext.Provider>
+    </ToggleContext>
   );
 }
 
 export const useToggleContext = () => {
-  const context = useContext(ToggleContext);
+  const context = use(ToggleContext);
   if (!context) {
     throw new Error(
       "Toggle context should be used within ToggleContextProvider"
