@@ -1,10 +1,18 @@
 import type { Metadata } from "next";
+import { Sora } from "next/font/google";
 import "./globals.css";
 import ToggleContextProvider from "@/context/ToggleState";
+
+const sora = Sora({
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Andrew Jefferson Mendez",
   description: "Hi, I'm Andrew Jefferson Mendez, a Front-end Developer",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({
@@ -14,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html className="scroll-pt-[80px]" lang="en">
-      <body className="font-main">
+      <body className={`${sora.className} antialiased`}>
         <ToggleContextProvider>{children}</ToggleContextProvider>
       </body>
     </html>
