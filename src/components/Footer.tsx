@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 export default function Footer() {
 	return (
-		<footer className="bg-[#2d2e32] py-10 text-white">
+		<footer className="glass-card py-10 text-[#2d2e32]">
 			<div className="mx-auto max-w-[1200px] px-6 md:px-16">
 				<div className="flex flex-col items-center gap-4 md:flex-row md:justify-between">
 					<Link className="text-2xl font-extrabold" href="/">

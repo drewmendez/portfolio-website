@@ -19,7 +19,7 @@ const icons = [
 
 export default function Hero() {
 	return (
-		<section className="min-h-screen bg-[url('/wallpaper.svg')] bg-cover bg-center pt-[80px] md:grid md:place-items-center">
+		<section className="min-h-screen pt-[80px] md:grid md:place-items-center">
 			<div className="mx-auto max-w-[1200px] px-6 py-16 md:px-16">
 				<div className="flex flex-col items-center justify-center gap-6 md:flex-row md:justify-between">
 					<Image
