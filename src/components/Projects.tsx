@@ -156,12 +156,12 @@ function ProjectCard({ project }: { project: Project }) {
 			</div>
 
 			<div className="mt-3 divide-y">
-				<div className="mb-2 flex gap-2">
+				<div className="mb-3 flex gap-2 border-slate-400 pb-3">
 					{project.techs.map((tech) => (
 						<Badge key={tech} tech={tech} />
 					))}
 				</div>
-				<div className="flex justify-end gap-2 pt-2 text-sm">
+				<div className="flex justify-end gap-2 text-sm">
 					<a
 						className="flex items-center gap-1 rounded-sm bg-slate-800 px-2 py-1 text-white duration-300 hover:opacity-70"
 						href={project.githubLink}
