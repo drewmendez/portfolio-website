@@ -121,7 +121,7 @@ const projects = [
 
 export default function Projects() {
 	return (
-		<section className="bg-[#fafafa] py-16" id="projects">
+		<section className="py-16" id="projects">
 			<div className="mx-auto max-w-[1200px] px-6 md:px-16">
 				<div className="flex justify-center">
 					<h2 className="mb-10 inline-block border-b-2 border-slate-400 pb-2 text-2xl font-bold text-[#2d2e32]">
@@ -141,7 +141,7 @@ export default function Projects() {
 
 function ProjectCard({ project }: { project: Project }) {
 	return (
-		<div className="rounded-xl bg-[#F0F2F2] p-4 shadow-inner">
+		<div className="glass-card rounded-xl p-4">
 			<Image
 				className="aspect-video w-full rounded-lg border border-slate-300"
 				src={project.image}

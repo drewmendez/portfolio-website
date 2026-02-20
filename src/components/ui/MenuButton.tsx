@@ -1,14 +1,21 @@
 'use client'
 
+import { useState } from 'react'
 import { IoClose, IoMenu } from 'react-icons/io5'
-import { useToggleContext } from '@/context/useToggleContext'
+import MobileNav from '../MobileNav'
 
 export default function MenuButton() {
-	const { isOpen, setIsOpen } = useToggleContext()
+	const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
 
 	return (
-		<button className="text-3xl text-[#2d2e32] sm:hidden" onClick={() => setIsOpen(!isOpen)}>
-			{isOpen ? <IoClose /> : <IoMenu />}
-		</button>
+		<>
+			<button
+				className="text-3xl text-foreground/70 sm:hidden"
+				onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}
+			>
+				{isMobileNavOpen ? <IoClose /> : <IoMenu />}
+			</button>
+			<MobileNav isMobileNavOpen={isMobileNavOpen} setIsMobileNavOpen={setIsMobileNavOpen} />
+		</>
 	)
 }

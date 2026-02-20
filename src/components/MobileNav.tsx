@@ -1,31 +1,32 @@
 'use client'
 
 import Link from 'next/link'
-import { useToggleContext } from '@/context/useToggleContext'
 
-export default function MobileNav() {
-	const { isOpen, setIsOpen } = useToggleContext()
-
+export default function MobileNav({
+	isMobileNavOpen,
+	setIsMobileNavOpen,
+}: {
+	isMobileNavOpen: boolean
+	setIsMobileNavOpen: (isMobileNavOpen: boolean) => void
+}) {
 	return (
-		<aside
-			className={`fixed top-[80px] ${
-				isOpen ? 'left-0' : '-left-full'
-			} z-10 h-full w-full bg-[#fafafa] px-6 py-6 transition-all duration-300`}
+		<nav
+			className={`glass-card fixed top-22 right-2 grid place-items-center gap-3 rounded-xl px-10 py-8 text-lg font-semibold text-foreground/70 ${
+				isMobileNavOpen ? 'translate-x-0' : 'translate-x-50'
+			} transition-transform duration-300 ease-out`}
 		>
-			<nav className="mt-10 grid justify-items-center gap-8 text-2xl font-semibold text-[#2d2e32]">
-				<Link href="/" onClick={() => setIsOpen(!isOpen)}>
-					Home
-				</Link>
-				<Link href="#projects" onClick={() => setIsOpen(!isOpen)}>
-					Projects
-				</Link>
-				<Link href="#about" onClick={() => setIsOpen(!isOpen)}>
-					About
-				</Link>
-				<Link href="#contact" onClick={() => setIsOpen(!isOpen)}>
-					Contact
-				</Link>
-			</nav>
-		</aside>
+			<Link href="/" onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}>
+				Home
+			</Link>
+			<Link href="#projects" onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}>
+				Projects
+			</Link>
+			<Link href="#about" onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}>
+				About
+			</Link>
+			<Link href="#contact" onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}>
+				Contact
+			</Link>
+		</nav>
 	)
 }
