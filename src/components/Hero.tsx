@@ -23,10 +23,11 @@ export default function Hero() {
 			<div className="mx-auto max-w-[1200px] px-6 py-16 md:px-16">
 				<div className="flex flex-col items-center justify-center gap-6 md:flex-row md:justify-between">
 					<Image
-						className="max-w-[300px] rounded-full border-4 border-[#2d2e32] md:order-2 lg:max-w-[400px]"
+						className="max-w-[300px] rounded-full drop-shadow-xl drop-shadow-purple-500 md:order-2 lg:max-w-[400px]"
 						src={profile}
 						quality={100}
 						alt="Me"
+						loading="eager"
 					/>
 					<div className="text-center text-[#2d2e32] md:text-start">
 						<p className="text-lg text-slate-600">Hello there,</p>

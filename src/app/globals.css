@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 
 @theme {
+	--color-foreground: oklch(0.28 0.07 295);
 	--color-bg-gradient:
 		radial-gradient(ellipse 80% 60% at 50% 50%, rgba(224, 212, 247, 0.9), transparent 70%),
 		radial-gradient(ellipse 70% 80% at 20% 80%, rgba(186, 230, 253, 0.85), transparent 60%),

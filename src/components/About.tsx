@@ -12,10 +12,11 @@ export default function About() {
 				</div>
 				<div className="flex flex-col items-center justify-between gap-10 md:flex-row lg:gap-20">
 					<Image
-						className="w-full max-w-[400px] flex-1 rounded-3xl shadow-lg"
+						className="w-full max-w-[400px] flex-1 rounded-full drop-shadow-xl drop-shadow-purple-500"
 						src={profile}
 						quality={100}
 						alt="me"
+						loading="eager"
 					/>
 					<div className="flex-1 text-[#2d2e32]">
 						<h3 className="mb-4 text-3xl font-bold">Hello,</h3>

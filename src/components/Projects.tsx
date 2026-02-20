@@ -141,7 +141,7 @@ export default function Projects() {
 
 function ProjectCard({ project }: { project: Project }) {
 	return (
-		<div className="glass-card p-4">
+		<div className="glass-card rounded-xl p-4">
 			<Image
 				className="aspect-video w-full rounded-lg border border-slate-300"
 				src={project.image}
