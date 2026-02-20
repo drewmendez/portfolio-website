@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html className="scroll-pt-[80px]" lang="en">
-			<body className={`${sora.className} bg-gradient-glass antialiased`}>
+			<body className={`${sora.className} bg-(image:--color-bg-gradient) bg-cover bg-fixed antialiased`}>
 				<ToggleContextProvider>{children}</ToggleContextProvider>
 			</body>
 		</html>
