@@ -9,13 +9,6 @@
 }
 
 @layer utilities {
-	.bg-gradient-glass {
-		background-image: var(--color-bg-gradient);
-		background-attachment: fixed;
-		background-size: cover;
-		min-height: 100vh;
-	}
-
 	.glass-card {
 		background: rgba(255, 255, 255, 0.19);
 		-webkit-backdrop-filter: blur(10px);
@@ -29,25 +22,5 @@
 			inset 0 0 10px 5px rgba(255, 255, 255, 0.5);
 		/* position: relative; */
 		overflow: hidden;
-	}
-
-	.glass-card::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		height: 1px;
-		background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
-	}
-
-	.glass-card::after {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 1px;
-		height: 100%;
-		background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), transparent, rgba(255, 255, 255, 0.3));
 	}
 }
