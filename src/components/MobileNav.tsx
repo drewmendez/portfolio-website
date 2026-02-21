@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import links from '@/data/links'
 import cn from '@/helpers/tailwindHelpers'
 
 export default function MobileNav({
@@ -17,18 +18,11 @@ export default function MobileNav({
 				isMobileNavOpen ? 'translate-x-0' : 'translate-x-50',
 			)}
 		>
-			<Link href="/" onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}>
-				Home
-			</Link>
-			<Link href="#projects" onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}>
-				Projects
-			</Link>
-			<Link href="#about" onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}>
-				About
-			</Link>
-			<Link href="#contact" onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}>
-				Contact
-			</Link>
+			{links.map((link) => (
+				<Link key={link.name} href={link.href} onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}>
+					{link.name}
+				</Link>
+			))}
 		</nav>
 	)
 }

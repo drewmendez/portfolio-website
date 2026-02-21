@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import links from '@/data/links'
 import MenuButton from './ui/MenuButton'
 
 export default function Header() {
@@ -10,18 +11,11 @@ export default function Header() {
 						Drew.dev
 					</Link>
 					<div className="hidden gap-5 font-semibold text-foreground/60 sm:flex">
-						<Link className="duration-300 hover:opacity-70" href="/">
-							Home
-						</Link>
-						<Link className="duration-300 hover:opacity-70" href="#projects">
-							Projects
-						</Link>
-						<Link className="duration-300 hover:opacity-70" href="#about">
-							About
-						</Link>
-						<Link className="duration-300 hover:opacity-70" href="#contact">
-							Contact
-						</Link>
+						{links.map((link) => (
+							<Link key={link.name} className="duration-300 hover:opacity-70" href={link.href}>
+								{link.name}
+							</Link>
+						))}
 					</div>
 					<MenuButton />
 				</nav>

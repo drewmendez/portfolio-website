@@ -22,11 +22,10 @@ export default function About() {
 					<div data-aos="fade-left" className="flex-1 text-[#2d2e32]">
 						<h3 className="mb-4 text-3xl font-bold">Hello,</h3>
 						<p className="text-slate-600">
-							I&apos;m Andrew Jefferson Mendez, a recent graduate from Catanduanes State University, holding a
-							Bachelor&apos;s degree in Computer Engineering. I am passionate about front-end development,
-							focusing on crafting responsive and interactive web applications. I also have a strong interest
-							in learning new technologies to expand my knowledge and skills. My aspiration is to become a
-							successful developer and create applications that benefit communities.
+							I&apos;m Andrew Jefferson Mendez, a Computer Engineering graduate and web developer passionate
+							about building clean, responsive, and user-centered web applications. I enjoy turning ideas into
+							intuitive digital experiences and continuously improving my skills. My goal is to create
+							impactful applications that solve real-world problems and benefit communities.
 						</p>
 					</div>
 				</div>

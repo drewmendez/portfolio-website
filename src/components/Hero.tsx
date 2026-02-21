@@ -1,21 +1,7 @@
 import Image from 'next/image'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import skillIcons from '@/data/skill-icons'
 import profile from '../../public/me.png'
-
-const icons = [
-	'html',
-	'css',
-	'javascript',
-	'typescript',
-	'react',
-	'next',
-	'tailwind',
-	'sass',
-	'express',
-	'nodejs',
-	'mysql',
-	'postman',
-]
 
 export default function Hero() {
 	return (
@@ -35,7 +21,7 @@ export default function Hero() {
 						<h1 className="text-3xl font-extrabold md:mt-2 md:text-4xl lg:text-5xl">
 							I&apos;m Andrew Jefferson Mendez
 						</h1>
-						<p className="text-lg text-slate-600">Aspiring Web Developer.</p>
+						<p className="text-lg text-slate-600">Web Developer.</p>
 						<div className="mt-2 flex justify-center gap-4 text-3xl md:mt-5 md:justify-start">
 							<a
 								className="duration-300 hover:opacity-70"
@@ -62,8 +48,8 @@ export default function Hero() {
 						Skills
 					</p>
 					<div className="flex flex-wrap justify-center gap-5">
-						{icons.map((icon) => (
-							<IconCard key={icon} icon={icon} />
+						{skillIcons.map((skillIcon) => (
+							<IconCard key={skillIcon} skillIcon={skillIcon} />
 						))}
 					</div>
 				</div>
@@ -72,8 +58,14 @@ export default function Hero() {
 	)
 }
 
-function IconCard({ icon }: { icon: string }) {
+function IconCard({ skillIcon }: { skillIcon: string }) {
 	return (
-		<Image src={`https://skillicons.dev/icons?i=${icon}`} alt={icon} width={55} height={55} unoptimized />
+		<Image
+			src={`https://skillicons.dev/icons?i=${skillIcon}`}
+			alt={skillIcon}
+			width={55}
+			height={55}
+			unoptimized
+		/>
 	)
 }
