@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Sora } from 'next/font/google'
+import AOSProvider from '@/components/AOSProvider'
 import './globals.css'
 
 const sora = Sora({
@@ -22,7 +23,7 @@ export default function RootLayout({
 	return (
 		<html className="scroll-pt-[80px] scroll-smooth" lang="en">
 			<body className={`${sora.className} bg-(image:--color-bg-gradient) bg-cover bg-fixed antialiased`}>
-				{children}
+				<AOSProvider>{children}</AOSProvider>
 			</body>
 		</html>
 	)
