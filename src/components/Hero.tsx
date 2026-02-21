@@ -25,11 +25,12 @@ export default function Hero() {
 					<Image
 						className="max-w-[300px] rounded-full drop-shadow-xl drop-shadow-purple-500 md:order-2 lg:max-w-[400px]"
 						src={profile}
+						data-aos="fade-left"
 						quality={100}
 						alt="Me"
 						loading="eager"
 					/>
-					<div className="text-center text-[#2d2e32] md:text-start">
+					<div data-aos="fade-right" className="text-center text-[#2d2e32] md:text-start">
 						<p className="text-lg text-slate-600">Hello there,</p>
 						<h1 className="text-3xl font-extrabold md:mt-2 md:text-4xl lg:text-5xl">
 							I&apos;m Andrew Jefferson Mendez
@@ -53,7 +54,10 @@ export default function Hero() {
 						</div>
 					</div>
 				</div>
-				<div className="mt-16 flex flex-col items-center text-lg font-bold text-[#2d2e32] md:flex-row">
+				<div
+					data-aos="fade-up"
+					className="mt-16 flex flex-col items-center text-lg font-bold text-[#2d2e32] md:flex-row"
+				>
 					<p className="mr-0 mb-8 border-b-2 border-slate-400 pb-2 md:mr-6 md:mb-0 md:border-r-2 md:border-b-0 md:pr-5 md:pb-0">
 						Skills
 					</p>
