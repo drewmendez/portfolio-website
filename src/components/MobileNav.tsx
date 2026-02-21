@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import cn from '@/helpers/tailwindHelpers'
 
 export default function MobileNav({
 	isMobileNavOpen,
@@ -11,9 +12,10 @@ export default function MobileNav({
 }) {
 	return (
 		<nav
-			className={`glass-card fixed top-22 right-2 grid place-items-center gap-3 rounded-xl px-10 py-8 text-lg font-semibold text-foreground/70 ${
-				isMobileNavOpen ? 'translate-x-0' : 'translate-x-50'
-			} transition-transform duration-300 ease-out`}
+			className={cn(
+				'glass-card fixed top-22 right-2 grid place-items-center gap-3 rounded-xl px-10 py-8 text-lg font-semibold text-foreground/70 transition-transform duration-300 ease-out',
+				isMobileNavOpen ? 'translate-x-0' : 'translate-x-50',
+			)}
 		>
 			<Link href="/" onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}>
 				Home
