@@ -14,11 +14,12 @@ export default function About() {
 					<Image
 						className="w-full max-w-[400px] flex-1 rounded-full drop-shadow-xl drop-shadow-purple-500"
 						src={profile}
+						data-aos="fade-right"
 						quality={100}
 						alt="me"
 						loading="eager"
 					/>
-					<div className="flex-1 text-[#2d2e32]">
+					<div data-aos="fade-left" className="flex-1 text-[#2d2e32]">
 						<h3 className="mb-4 text-3xl font-bold">Hello,</h3>
 						<p className="text-slate-600">
 							I&apos;m Andrew Jefferson Mendez, a recent graduate from Catanduanes State University, holding a

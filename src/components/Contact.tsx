@@ -10,7 +10,7 @@ export default function Contact() {
 						Contact Me
 					</h2>
 				</div>
-				<div className="flex flex-col justify-center gap-7 md:flex-row md:gap-20">
+				<div data-aos="fade-up" className="flex flex-col justify-center gap-7 md:flex-row md:gap-20">
 					<div className="flex flex-col items-center justify-center gap-3 md:flex-row">
 						<div className="rounded-full bg-slate-300 p-3 text-2xl text-[#2d2e32] shadow-inner">
 							<FaLinkedin />
