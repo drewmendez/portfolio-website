@@ -21,8 +21,10 @@ export default function RootLayout({
 	children: React.ReactNode
 }>) {
 	return (
-		<html className="scroll-pt-[80px] scroll-smooth" lang="en">
-			<body className={`${sora.className} bg-(image:--color-bg-gradient) bg-cover bg-fixed antialiased`}>
+		<html className="scroll-pt-[80px] overflow-x-hidden scroll-smooth" lang="en">
+			<body
+				className={`${sora.className} overflow-x-hidden bg-(image:--color-bg-gradient) bg-cover bg-fixed antialiased`}
+			>
 				<AOSProvider>{children}</AOSProvider>
 			</body>
 		</html>
