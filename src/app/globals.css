@@ -21,4 +21,40 @@
 			inset 0 -1px 0 rgba(255, 255, 255, 0.1),
 			inset 0 0 10px 5px rgba(255, 255, 255, 0.5);
 	}
+
+	@keyframes hero-blob-gradient-pan {
+		0% {
+			background-position:
+				0% 30%,
+				90% 10%,
+				20% 90%,
+				0% 0%;
+		}
+		50% {
+			background-position:
+				80% 40%,
+				10% 80%,
+				90% 20%,
+				0% 100%;
+		}
+		100% {
+			background-position:
+				0% 30%,
+				90% 10%,
+				20% 90%,
+				0% 0%;
+		}
+	}
+
+	.hero-blob {
+		border-radius: var(--hero-blob-radius, 73% 27% 36% 64% / 56% 54% 46% 44%);
+		transition: border-radius 1800ms cubic-bezier(0.2, 0.8, 0.2, 1);
+		background-image:
+			radial-gradient(circle at 20% 25%, rgba(168, 85, 247, 0.95), transparent 55%),
+			radial-gradient(circle at 80% 30%, rgba(59, 130, 246, 0.85), transparent 55%),
+			radial-gradient(circle at 35% 85%, rgba(236, 72, 153, 0.7), transparent 60%),
+			linear-gradient(135deg, rgba(168, 85, 247, 0.45), rgba(59, 130, 246, 0.35));
+		background-size: 160% 160%;
+		animation: hero-blob-gradient-pan 10s ease-in-out infinite;
+	}
 }

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import HeroImage from '@/components/HeroImage'
 import skillIcons from '@/data/skill-icons'
 import profile from '../../public/me.png'
 
@@ -8,14 +9,7 @@ export default function Hero() {
 		<section className="min-h-screen pt-[80px] md:grid md:place-items-center">
 			<div className="mx-auto max-w-[1200px] px-6 py-16 md:px-16">
 				<div className="flex flex-col items-center justify-center gap-6 md:flex-row md:justify-between">
-					<Image
-						className="max-w-[300px] rounded-full drop-shadow-xl drop-shadow-purple-500 md:order-2 lg:max-w-[400px]"
-						src={profile}
-						data-aos="fade-left"
-						quality={100}
-						alt="Me"
-						loading="eager"
-					/>
+					<HeroImage src={profile} alt="Me" className="md:order-2" />
 					<div data-aos="fade-right" className="text-center text-[#2d2e32] md:text-start">
 						<p className="text-lg text-slate-600">Hello there,</p>
 						<h1 className="text-3xl font-extrabold md:mt-2 md:text-4xl lg:text-5xl">
